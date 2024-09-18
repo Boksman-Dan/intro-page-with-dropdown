@@ -1,0 +1,249 @@
+body{margin: 0%;     width: 100vw; min-height: 100vh;
+    position: relative; top:0px ;  left: 0px;
+    background: linear-gradient(0deg, rgb(216, 210, 204), rgb(230, 230, 230), rgb(245,245,245))
+}
+:root{
+    --Almost-White: hsl(0, 0%, 93%);
+    --Almost-Black: hsl(0, 0%, 8%);
+    --Medium-Gray2: hsl(0, 0%, 85%);
+    --Medium-Gray1: hsl(0, 0%, 75%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Main-bg-color: #fff
+}
+.attribution a { color: rgb(49, 67, 141); }
+.attribution { font-size: 0.6rem; text-align: center;  color:rgb(62, 82, 163);}
+.attribution a:link, .attribution a:visited{
+   text-decoration: none; color: rgb(78, 105, 210);;
+}  
+.attribution a:hover{ background-color: rgb(177, 10, 43); color: white; }
+
+div.PCcentre{
+    min-height: 100vh;  width: 100vw;
+    display: flex;  flex-flow: column nowrap;
+    justify-content: center;    align-items: center;  
+    background: linear-gradient(0deg, rgb(216, 210, 204), rgb(230, 230, 230), rgb(245,245,245))
+} 
+html{font-size: 16px;}
+main{
+    background-color: var(--Main-bg-color);
+    padding: 0.8rem;
+    width: 70vw;    min-height: 70vh;
+    box-shadow: 4px 4px 2px rgb(150, 150, 150);
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+.btn-open,.btn-close{display: none;}
+.TopMost{
+    margin-bottom: 2.2rem;
+    display: inline-block;
+    width: calc(70vw - 124px);
+}
+.rel-postn{    position: relative; }
+div#LtH{
+    position: absolute; left: 1.2rem;
+    display: flex;      gap: 1.4rem;     flex-flow: row nowrap;   align-items: center;
+}
+div#RtH{
+    position: absolute; right: 1.2rem;
+    display: flex;      gap: 1.4rem;     flex-flow: row nowrap;   align-items: center;
+}
+button.in-header{
+    border: none;   text-align: center;
+    padding: 0.5rem;        color: var(--Medium-Gray);      margin-top: .6rem;
+    font-size: 0.75rem;     font-family: sans-serif;     font-weight: bolder;
+    background-color: var(--Main-bg-color);
+}
+button.reg{ 
+    margin-top: .6rem;
+    padding: 0.3rem 0.65rem;    text-align: center;     color: var(--Medium-Gray);
+    border: 2px solid var(--Medium-Gray);   border-radius: .6rem;
+    font-size: 0.75rem;     font-family: sans-serif;     font-weight: bolder;
+    background-color: var(--Main-bg-color);
+}
+ul.dropdown-menu>li>a.dropdown-item{
+    text-align: center;     color: var(--Medium-Gray);
+    font-size: 0.7rem;     font-family: sans-serif;     font-weight: bolder;
+}
+#grid1{
+    min-width: 72%;  height: 30rem;     
+    margin: 2rem auto;    
+}
+#grid1 div.row1{  height: 30rem;     min-width: 100%;}
+#grid1 div#column1{
+    position: absolute;  left: 3rem;
+    width: 45%;   height: 30rem; 
+    display: flex;  flex-flow: column nowrap;   gap: 3rem;
+    justify-content: space-around; align-items: flex-start;
+}
+#grid1 div#column2{
+    background-image: url("./images/image-hero-desktop.png");
+    background-size:100% 30rem;
+    position: absolute;    right: 3rem;
+    width: 43%;   height: 30rem; 
+}
+#g1r1c1ch0, #g1r1c1ch0>img{display: none;}
+#g1r1c1ch1{
+    color: var(--Almost-Black);     text-align: left;
+    font-size: 2.1rem;     font-family: sans-serif;     font-weight: 900;
+    max-width: 95%;
+}
+#g1r1c1ch2{
+    text-align: left;   max-width: 95%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#g1r1c1ch3>a>button{
+    padding: 0.7rem 1.2rem;
+    text-align: center;     text-decoration: none;
+    font-size: 0.85rem;     font-family: sans-serif;     font-weight: bolder;
+    border: 2px solid var(--Almost-Black);   border-radius: .6rem;
+    background-color: var(--Almost-Black);      color: var(--Almost-White);
+}
+#g1r1c1ch4{
+    display: flex;     flex-flow: row nowrap;
+       /* justify-content: space-evenly; align-items: center;*/
+    max-width: 92%;
+}
+#g1r1c1ch4>img{ transform: scale(.55);  max-width: 21%;}
+button:hover{cursor: pointer;/*
+    background-color: var(--Medium-Gray2);      color: var(--Almost-White);
+    border: 2px solid var(--Almost-Black);     border-radius: .6rem;*/
+}
+
+
+@media (max-width: 965px) and (min-width: 600px) {
+    html{font-size: 14px;}
+    main{width: 82vw;}
+    .TopMost{width: calc(82vw - 124px)}
+    div#LtH{
+        position: absolute; left: .62rem;
+        display: flex;      gap: .31rem;     flex-flow: row nowrap;   align-items: center;
+    }
+    div#RtH{
+        position: absolute; right: .52rem;
+        display: flex;      gap: .31rem;     flex-flow: row nowrap;   align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    html{font-size: 14px;}
+    /* open/close sidebar in phone */
+    .overlay {
+        position: absolute;    top: 0;  left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+    main{width: 92vw;  min-height: auto;}
+    header.rel-postn{width: 100%;}
+    .btn-open{
+        display: inline-block;
+        position: absolute;   right: 1.2rem;
+        cursor: pointer;
+    }
+    .btn-close{
+        display: inline-block;
+        position: absolute;
+        right: 1.2rem;
+        top: 1.8rem;
+        cursor: pointer; 
+    }
+    .btn-close:hover, .btn-open:hover {
+        transform: scale(1.3);
+    }
+    /* ADIDE CONTENT */
+
+    .hidden {
+    display: none;
+    }
+  
+  .aside-content {
+    height: 100vh;
+    position: fixed;
+    width: 50vw;
+    background-color: White;
+    overflow: auto;
+    right: -30rem;
+    top: 0;
+    z-index: 2; 
+    transition: all .6s; 
+    margin-bottom: 0;
+    display: block;
+  }
+  .right-nav{right: 0rem;}
+  
+  .aside-content::-webkit-scrollbar {
+    background: transparent;
+    width: .3rem;
+    border-radius: 3rem;
+  }
+  
+  .aside-content::-webkit-scrollbar-thumb {
+    background: var(--Medium-Gray);
+    border-radius: 1rem;
+  }
+  div#LtH{
+      position: static; left: 0rem; margin-top: 2.5rem;
+      display: flex;      gap: 1.4rem;     flex-flow: column nowrap;   align-items: center; justify-content: center;
+  }
+  div#RtH{
+      position: static; right: 0rem;
+      display: flex;      gap: 1.4rem;     flex-flow: column nowrap;   align-items: center;  justify-content: center;
+  }
+  #grid1{
+      min-width: 92%;  height: auto;     
+      margin: 1rem auto;    
+  }
+  #grid1 div.row1{  height: auto;     min-width: 100%;
+      display: flex;    flex-flow: column-reverse nowrap;
+      justify-content: center;  align-items: center;
+    }
+  #grid1 div#column1{
+      position: static;  left: 0rem;
+      width: 96%;   height: auto; 
+      display: flex;  flex-flow: column nowrap;   gap: 2rem;
+      justify-content: space-around; align-items: center;
+  }
+  #grid1 div#column2{ display: none;
+      background-image: url("./images/image-hero-mobile.png");
+      background-size:100% 14rem;
+      position: static;    
+      width: 94%;   height: 14rem; 
+  }
+  #g1r1c1ch0, #g1r1c1ch0>img{
+    display: block;
+    max-width: 96%; height: 14rem;
+  }
+  #g1r1c1ch1{
+      color: var(--Almost-Black);     text-align: center;
+      font-size: 2rem;     font-family: sans-serif;     font-weight: 900;
+      max-width: 96%;
+  }
+  #g1r1c1ch2{
+      text-align: center;   max-width: 96%;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #g1r1c1ch3>a>button{
+      padding: 0.7rem 1.2rem;
+      text-align: center;     text-decoration: none;
+      font-size: 0.85rem;     font-family: sans-serif;     font-weight: bolder;
+      border: 2px solid var(--Almost-Black);   border-radius: .6rem;
+      background-color: var(--Almost-Black);      color: var(--Almost-White);
+  }
+  #g1r1c1ch4{
+      display: flex;     flex-flow: row nowrap;
+         /* justify-content: space-evenly; align-items: center;*/
+      max-width: 92%;
+  }
+  #g1r1c1ch4>img{ transform: scale(.55);  max-width: 21%;}
+  
+}
+
+
+@media (min-width: 465px) and (max-width: 600px){
+    main{width: 82vw;  min-height: auto;}   
+}
+
+@media screen and (min-height: 990px){
+    main{width: 82vw;  min-height: 50vh;} 
+}
