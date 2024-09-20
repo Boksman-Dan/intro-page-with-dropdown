@@ -222,7 +222,7 @@ button:hover{cursor: pointer;/*
   }
   #g1r1c1ch2{
       text-align: center;   max-width: 96%;
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-family:sans-serif;
   }
   #g1r1c1ch3>a>button{
       padding: 0.7rem 1.2rem;
