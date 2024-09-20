@@ -133,6 +133,7 @@ button:hover{cursor: pointer;/*
         height: 100%;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.75);
+        z-index: 2;
     }
     main{width: 92vw;  min-height: auto;}
     header.rel-postn{width: 100%;}
